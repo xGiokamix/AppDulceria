@@ -5,6 +5,98 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#747E7E"
     tools:context=".ActivityCliente">
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="#3F7C85"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp">
+
+        <EditText
+            android:id="@+id/edtIdProducto"
+            android:layout_width="340dp"
+            android:layout_height="60dp"
+            android:autofillHints="Id Producto"
+            android:ems="10"
+            android:hint="@string/edtIdProducto"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:textColor="#DEC5C3"
+            android:textColorHint="#DEC5C3"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="31dp"
+            tools:layout_editor_absoluteY="85dp" />
+
+        <TextView
+            android:id="@+id/txtNombre"
+            android:layout_width="340dp"
+            android:layout_height="60dp"
+            tools:layout_editor_absoluteX="31dp"
+            tools:layout_editor_absoluteY="85dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/txtNombre"
+            android:textColor="#DEC5C3"
+            app:layout_constraintTop_toBottomOf="@id/edtIdProducto"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/txtDescripcion"
+            android:layout_width="340dp"
+            android:layout_height="60dp"
+            tools:layout_editor_absoluteX="31dp"
+            tools:layout_editor_absoluteY="85dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/txtDescripcion"
+            android:textColor="#DEC5C3"
+            app:layout_constraintTop_toBottomOf="@id/txtNombre"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/txtPrecio"
+            android:layout_width="340dp"
+            android:layout_height="60dp"
+            tools:layout_editor_absoluteX="31dp"
+            tools:layout_editor_absoluteY="85dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/txtPrecio"
+            android:textColor="#DEC5C3"
+            app:layout_constraintTop_toBottomOf="@id/txtDescripcion"
+            tools:ignore="MissingConstraints" />
+
+
+        <Button
+            android:id="@+id/btnBuscar"
+            android:layout_width="210dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="#FF5F5D"
+            android:text="@string/btnBuscar"
+            android:textColor="#DEC5C3"
+            app:layout_constraintTop_toBottomOf="@id/txtPrecio"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="96dp" />
+
+        <Button
+            android:id="@+id/btnRegresar"
+            android:layout_width="210dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="#FF5F5D"
+            android:text="@string/btnRegresar"
+            android:textColor="#DEC5C3"
+            app:layout_constraintTop_toBottomOf="@id/btnBuscar"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="96dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
