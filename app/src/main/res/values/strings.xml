@@ -2,4 +2,12 @@
     <string name="app_name">ProyectoDulceria</string>
     <string name="btnClientes">Cliente</string>
     <string name="btnAdmin">Administrador</string>
+
+    <!--Activity Cliente-->
+    <string name="edtIdProducto">Id producto</string>
+    <string name="txtNombre">Nombre de producto</string>
+    <string name="txtDescripcion">Descripción de producto</string>
+    <string name="txtPrecio">Precio</string>
+    <string name="btnBuscar">Buscar</string>
+    <string name="btnRegresar">Regresar</string>
 </resources>
