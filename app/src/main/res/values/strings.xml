@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ProyectoDulceria</string>
+    <string name="btnClientes">Cliente</string>
+    <string name="btnAdmin">Administrador</string>
+</resources>
